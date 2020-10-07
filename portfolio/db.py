@@ -17,7 +17,7 @@ def gen_db(debug):
     else:
         return {
             "default": {
-                "ENGINE": config("ENGINE"),
-                "DATABASE_URL": config("DATABASE_URL"),
+                "ENGINE": django.db.backends.postgresql,
+                **dj_database_url.parse(config("DATABASE_URL")),
             }
         }
