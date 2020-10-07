@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = gen_db(config("DEBUG"))
+DATABASES = gen_db(DEBUG)
 
 
 # Password validation
