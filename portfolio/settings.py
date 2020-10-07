@@ -27,9 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'b1pokies+x%oqy7yyu-=r=u7lntmu1(7&cil#&7zi-wugbfp4%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['decagon-portfolio.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
